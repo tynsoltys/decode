@@ -6,8 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #1d1d1d;
-  color:white;
+
+
 }
 
 code {
@@ -26,8 +26,27 @@ h1 {
   color:silver;
 }
 
-.block-zone {
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
 
+
+.container {
+  background-color: #1d1d1d;
+  color:white;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  margin:auto;
+  padding-top: 35px;
+  // display: flex;
+  // justify-content: center;
+  // // align-items: center;
+  // flex-flow: row wrap;
+}
+
+.block-zone {
   // border:1px solid red;
   .block-row {
     display: flex;
@@ -63,7 +82,8 @@ h1 {
   justify-content: center;
   &:hover {
     p.letter, p.number {
-      opacity: 1
+      opacity: 1;
+
     }
 
   }
@@ -76,45 +96,190 @@ h1 {
   width: 100%;
 }
 
+
+
 p.letter, p.number {
   transition: all 0.3s;
   margin: 0;
   padding: 0;
   width: 100%;
-  display: block;
+  height: 50px;
+  display: flex;
   flex: 1 0 auto;
-  border:1px solid red;
+  // border:1px solid red;
+  font-size: 20px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+p.number {
+  display: none;
 }
 
 .split {
+  p {
+    height: 25px;
+  }
+  p.letter {
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    position: relative;
+    z-index:5;
+    &:before {
+      content:"";
+      border-color: transparent rgba(255,255,255,0.3);
+      border-style: solid;
+      border-width: 36px 36px 36px 0px;
+      height: 0px;
+      width: 0px;
+      position: absolute;
+      left: -6px;
+      top: -24px;
+      transform: rotate(45deg);
+      z-index:-1;
+      display: none;
+    }
+    &:hover {
+      &:before {
+        display: block;
+      }
+    }  
+  }
+  p.number {
+    display: block;
+    text-align: right;
+    justify-content: flex-end;
+    padding-right: 3px;
+    padding-bottom: 3px;    position: relative;
+    z-index:5;
+    &:before {
+      content:"";
+      height: 100px;
+      width: 100%;
+      // background-color: #fff;
+      border-color: transparent rgba(255,255,255,0.3);
+      border-style: solid;
+      border-width: 36px 36px 36px 0px;
+      height: 0px;
+      width: 0px;
+      position: absolute;
+      right: -6px;
+      bottom: -24px;
+      transform: rotate(-135deg);
+      z-index:-1;
+      display: none;
+    }
+    &:hover {
+      &:before {
+        display: block;
+      }
+    }
+  }
   
 }
 
-p.letter {
-
+.dark {
+  color: black;
 }
-p.number {
 
+.dark-letter {
+  p.letter {
+    color: black;
+  }
 }
+
+.dark-number {
+  p.number {
+    color: black;
+  }
+}
+
+
+.octagon { overflow: hidden; }
+
+.inner {
+	transform: rotate(45deg);
+	background: #ee8c25;
+}
+
+
 
 .space {
-  .bottom {
+  width: 50px;
+  height: 50px;
+  background: red;
+  position: relative;
+  z-index: 5;
+  .letter {
+    // &:before {
+    //   content:"";
+    //   height: 100px;
+    //   width: 100%;
+    //   // background-color: #000;
+    //   border-color: transparent black;
+    //   border-style: solid;
+    //   border-width: 10px 10px 10px 0px;
+    //   height: 0px;
+    //   width: 0px;
+    //   position: absolute;
+    //   right: -2px;
+    //   bottom: -6px;
+    //   transform: rotate(-135deg);
+    //   z-index:6;
+    // }
+    // &:after {
+    //   content:"";
+    //   height: 100px;
+    //   width: 100%;
+    //   // background-color: #000;
+    //   border-color: transparent black;
+    //   border-style: solid;
+    //   border-width: 6px 6px 6px 0px;
+    //   height: 0px;
+    //   width: 0px;
+    //   position: absolute;
+    //   left: -2px;
+    //   bottom: -4px;
+    //   transform: rotate(-45deg);
+    //   z-index:6;
+    // }
 
+  }
+  .number {
+    height: 50px;
+    width: 50px;
+    // &:before {
+    //   content:"assaas";
+    //   border-color: transparent red;
+    //   border-style: solid;
+    //   border-width: 6px 6px 6px 0px;
+    //   height: 0px;
+    //   width: 0px;
+    //   position: absolute;
+    //   left: -6px;
+    //   top: -24px;
+    //   transform: rotate(45deg);
+    //   z-index:600;
+    //   background-color: #fff;
+    // }
   }
 }
 
 
 .result-field {
-  background-color: #1d1d1d;
+  background-color: transparent;
   border: none;
-  // width: 100%;
+  width: 90%;
   height: 60px;
   color: white;
   text-align: center;
-  font-size: 4em;
+  font-size: 45px;
   // font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
 
 }
 
