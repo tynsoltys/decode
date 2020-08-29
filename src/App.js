@@ -150,8 +150,8 @@ function App() {
       <CodeBlock data={block_y}/>
       <CodeBlock data={block_n}/>
       </div>
-      <div title="up down turn around" className={`flipper ${sideA ? "" : "flipped-flipper"}`} onClick={() => flipside()}>
-        <p className="instruction">up down turn around</p>
+      <div title="flip sides" className={`flipper ${sideA ? "" : "flipped-flipper"}`} onClick={() => flipside()} role="navigation">
+        <p className="instruction">turn around</p>
       </div>
         <div className={`container ${`${sideA ? "" : "flip-album"}`}`} onMouseOver={() => showZone()}>
           { /* TODO Componentize the Sides*/ }

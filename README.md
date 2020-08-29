@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#decode
+------
+## Project Goals
+#### *decode* was built to translate the enigmatic visual colour code used in Peter Saville's album cover designs readily and easily. 
 
-## Available Scripts
+## Design Notes
+-----
+* This project adapts much of the visual language used in Peter Saville's work, including his choice of palette, typefaces, letterspacing & kerning, as well as motifs such as the black/yellow construction hash.
+* Much of his work is conceptual and intentionally vague, and so much of the interaction is intentionally left vague and open to discovery.
+* The code itself is meant to be enigmatic and not easily detectable, discernable, or readable, and is as such fundamentally not very accessible. One could, through descriptive labels, mitigate and allow some participation.
 
-In the project directory, you can run:
+## Dev Notes
+-----
+* Very experimental code, some commenting attempts to clarify 
+* SCSS is all in one file for now 
+* Colors should be made into :root variables which can be accessed both by JS and SCSS
 
-### `npm start`
+## TODOs & Improvements
+-----
+* Create *encode*, which could use either HTML Canvas or another tool to generate colour codes through typed entries; could repurpose a lot of the existing code/object models.
+* Componentize several elements (container, flipper, code, contact info)
+* Split stylesheets into component-driven files
+* Create color variables & refactor into object model & stylesheets
+* Make responsive
+* Make more accessible through better labelling & tabindices
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+💿 Built in 2020 💿
