@@ -58,9 +58,9 @@ h2 {  font-size: 5em;
 .code {
   pointer-events: none;
   .block {
-    border-bottom:2px solid #000;
+    border-bottom:2px solid white;
     .top {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid white;
     }
   }
   .split {
@@ -83,15 +83,19 @@ h2 {  font-size: 5em;
   );
   box-shadow: 0px 8px 16px rgba(0,0,0,0.05);
   transition: all 0.2s;
+  transition-delay:0.5s;
   &:hover {
     height: 150px;
     cursor: pointer;
     .instruction {
       display:block;
+      transition: all .5s;
+      transition-delay:0.2s;
+      opacity:1;
     }
   }
   .instruction {
-    display: none;
+    // display: none;
     width: 100%;
     background-color: #F58221;
     font-style: italic;
@@ -101,6 +105,7 @@ h2 {  font-size: 5em;
     position: absolute;
     bottom: 0;
     margin-bottom: 0;
+    opacity:0;
   }
 }
 
@@ -403,6 +408,8 @@ p.story {
 
 h3 {
   margin-top: 0;
+  font-style: italic;
+  letter-spacing: -1px;
 }
 
 a {
@@ -417,6 +424,7 @@ p.credits {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  max-width: 300px;
 }
 
 ul {
@@ -426,4 +434,7 @@ ul {
   text-transform: uppercase;
   letter-spacing: 2px;
   list-style-type: none;
+  li{
+    margin: 5px;
+  }
 }

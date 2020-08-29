@@ -221,11 +221,11 @@ function App() {
 
             <h3>coming soon</h3>
             <ul>
-              <li><em>encoder</em></li>
+              <li><em>encode</em></li>
               <li>iterm 2 theme</li>
               <li>vscode theme</li>
             </ul>
-            <p className="credits">Visual identity inspired by Peter Saville for New Order.<br/> <em>decode</em> designed & built by <a href="http://www.tynsoltys.com" target="_blank">me</a> as a welcome escape from these times of <em>PCL</em>.</p>
+            <p className="credits">Visual identity inspired by Peter Saville for New Order.<br/> <em>decode</em> designed & built by <a href="http://www.github.com/tynsoltys" target="_blank">me</a> as a welcome escape from these times of <em>PCL</em>.</p>
           </div>
         </div>
       </div>
