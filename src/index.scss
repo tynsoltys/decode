@@ -57,6 +57,7 @@ h2 {  font-size: 5em;
 
 .code {
   pointer-events: none;
+  position: absolute;
   .block {
     border-bottom:2px solid white;
     .top {
@@ -415,6 +416,7 @@ h3 {
   margin-top: 0;
   font-style: italic;
   letter-spacing: -1px;
+  font-size: 1.5em;
 }
 
 a {
@@ -426,10 +428,13 @@ a {
 }
 
 p.credits {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  max-width: 300px;
+  max-width: 320px;
+  margin:auto;
+  margin-top: 40px;
+
 }
 
 ul {
