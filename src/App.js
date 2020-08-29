@@ -46,8 +46,8 @@ function App() {
     const block_d = new Block("d","#F58221", "#F58221","4", "split");
     const block_e = new Block("e","#8ED8F7", "#8ED8F7","5", "split");
     const block_f = new Block("f","#F6ADCD", "#F6ADCD","6", "split");
-    const block_g = new Block("h","#583F99", "#583F99","7", "split");
-    const block_h = new Block("g","#EB008C", "#EB008C","8", "split");
+    const block_g = new Block("g","#583F99", "#583F99","7", "split");
+    const block_h = new Block("h","#EB008C", "#EB008C","8", "split");
     const block_i = new Block("i","#03AEEF", "#03AEEF","9", "split");
     const block_j = new Block("j","#eeeeee", "#33BCAD","0", "split dark-letter");
     const block_k = new Block("k","#33BCAD", "#33BCAD");
