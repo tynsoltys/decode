@@ -19,6 +19,8 @@ code {
   box-sizing: border-box;
 }
 
+// TYPOGRAPHY
+
 h1 {
   font-size: 5em;
   font-style: italic;
@@ -57,6 +59,7 @@ h2 {  font-size: 5em;
 
 .code {
   pointer-events: none;
+  position: absolute;
   .block {
     border-bottom:2px solid white;
     .top {
@@ -72,6 +75,8 @@ h2 {  font-size: 5em;
     }
   }
 }
+
+// NAVIGATION / FLIPPER
 
 .flipper {
   position: absolute;
@@ -426,10 +431,12 @@ a {
 }
 
 p.credits {
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  max-width: 300px;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 ul {
