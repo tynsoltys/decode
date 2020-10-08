@@ -133,18 +133,16 @@ function App() {
     <div className="App">
       <div className="wrapper">
       <div className="code">
-      <CodeBlock data={block_f}/>
-      <CodeBlock data={block_l}/>
-      <CodeBlock data={block_y}/>
-      <CodeBlock data={block_space}/>
-      <CodeBlock data={block_o}/>
-      <CodeBlock data={block_n}/>
-      <CodeBlock data={block_space}/>
+
       <CodeBlock data={block_p}/>
       <CodeBlock data={block_e}/>
       <CodeBlock data={block_n}/>
       <CodeBlock data={block_c}/>
       <CodeBlock data={block_e}/>
+      <CodeBlock data={block_space}/>
+      <CodeBlock data={block_f}/>
+      <CodeBlock data={block_l}/>
+      <CodeBlock data={block_y}/>
       <CodeBlock data={block_space}/>
       <CodeBlock data={block_f}/>
       <CodeBlock data={block_u}/>
