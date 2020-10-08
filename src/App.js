@@ -133,22 +133,22 @@ function App() {
     <div className="App">
       <div className="wrapper">
       <div className="code">
-      <CodeBlock data={block_k}/>
-      <CodeBlock data={block_o}/>
-      <CodeBlock data={block_o}/>
-      <CodeBlock data={block_k}/>
-      <CodeBlock data={block_n}/>
-      <CodeBlock data={block_h}/>
+      <CodeBlock data={block_p}/>
+      <CodeBlock data={block_l}/>
+      <CodeBlock data={block_e}/>
       <CodeBlock data={block_a}/>
-      <CodeBlock data={block_k}/>
-      <CodeBlock data={block_n}/>
-      <CodeBlock data={block_space}/>
-      <CodeBlock data={block_i}/>
       <CodeBlock data={block_s}/>
+      <CodeBlock data={block_e}/>
       <CodeBlock data={block_space}/>
+      <CodeBlock data={block_l}/>
+      <CodeBlock data={block_e}/>
       <CodeBlock data={block_t}/>
-      <CodeBlock data={block_y}/>
-      <CodeBlock data={block_n}/>
+      <CodeBlock data={block_space}/>
+      <CodeBlock data={block_m}/>
+      <CodeBlock data={block_e}/>
+      <CodeBlock data={block_space}/>
+      <CodeBlock data={block_g}/>
+      <CodeBlock data={block_o}/>
       </div>
       <div title="flip sides" className={`flipper ${sideA ? "" : "flipped-flipper"}`} onClick={() => flipside()} role="navigation">
         <p className="instruction">turn around</p>
@@ -159,8 +159,6 @@ function App() {
             <header>
               <h1 className={`${showResultZone ? "" : "header-start"}`}>decode</h1>
               <div className="description">
-                {/* <span className="plus">+</span> */}
-                {/* <p>peter saville decoder</p> */}
               </div>
             </header>
             <div className={`block-zone hide ${showResultZone ? "show" : "hide"}`}>
