@@ -145,9 +145,7 @@ function App() {
       <CodeBlock data={block_space}/>
       <CodeBlock data={block_f}/>
       <CodeBlock data={block_u}/>
-      <CodeBlock data={block_c}/>
-      <CodeBlock data={block_k}/>
-      <CodeBlock data={block_s}/>
+      <CodeBlock data={block_x}/>
       <CodeBlock data={block_space}/>
       <CodeBlock data={block_t}/>
       <CodeBlock data={block_r}/>
